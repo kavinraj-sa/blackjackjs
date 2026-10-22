@@ -1,18 +1,21 @@
-// 1. Create two variables, firstCard and secondCard. 
-// Set their values to a random number between 2-11
-
-// 2. Create a variable, sum, and set it to the sum of the two cards
-
 
 let cards = []// array - ordered list of items
 let sum = 0
 let hasBlackJack = false
 let isAlive = false
 let message = ""
+let player = {
+    name : "kavi",
+    chips : 145
+}
 
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+let playerEl = document.getElementById("players-el")
+
+
+playerEl.textContent = player.name + ": $" + player.chips// Render the player's name and chips in playerEl
 
 
 function getRandomCard() {
@@ -54,7 +57,6 @@ function renderGame() {
 }
 
 function newCard(){
-    console.log("Drawing a new card from the deck!")
     if (isAlive === true && hasBlackJack == false){
         let card = getRandomCard()
         sum += card
