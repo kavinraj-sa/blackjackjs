@@ -30,3 +30,29 @@ button {
     margin-top: 2px;
     font-size: 20px;
 }
+
+.instructions {
+    max-width: 700px;
+    margin: 24px auto;
+    padding: 16px 24px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.instructions h2,
+.instructions h3 {
+    color: goldenrod;
+    text-align: center;
+}
+
+.instructions ul {
+    padding-left: 24px;
+}
+
+.instructions code {
+    color: gold;
+}

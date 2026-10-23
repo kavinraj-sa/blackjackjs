@@ -13,7 +13,17 @@
         <button onclick="startGame()">START GAME</button>
         <button onclick = "newCard()">NEW CARD</button>
         <p id = "players-el"></p>
-        <p>Once you win, Please refresh to start again.</p>
+        <section class="instructions">
+            <h2>How to Play</h2>
+            <p>Start a game to receive two random cards. Choose NEW CARD to draw again while your game is active.</p>
+            <ul>
+                <li>Try to get a total of 21, or as close to it as possible.</li>
+                <li>If your total goes over 21, you bust and the game ends.</li>
+                <li>In this game, reaching exactly 21 is Blackjack and stops you from drawing more cards.</li>
+            </ul>
+            <h3>How Blackjack Works in This Program</h3>
+            <p>Each card is represented by a number: cards 2–10 keep their value, Jack/Queen/King count as 10, and an Ace counts as 11. The program adds the card values into your sum. It uses <code>isAlive</code> to track whether you can draw and <code>hasBlackJack</code> to stop draws after 21. This is a simplified Blackjack game: it does not include a dealer, betting, or the option to count an Ace as 1.</p>
+        </section>
         <script src = "index.js"></script>
     </body>
 </html>
